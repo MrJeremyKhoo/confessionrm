@@ -377,7 +377,7 @@
                     </div>
                 </div>
                 <div style="font-size:1.2rem; font-weight:700; margin-bottom:10px;">QUALITY DRINKS</div>
-                <h1 class="hero-title">MENU<br>VOLUME 1<br>25A BOON TAT ST LVL2 </h1>
+                <h1 class="hero-title">MENU<br>VOLUME 1<br>LVL 2</h1>
                 <div class="hero-hours">1500-0100 hrs</div>
                 <br>
                 <a onclick="triggerClick(); openModal();" class="btn-reserve">
@@ -392,7 +392,7 @@
         <div class="cassette-text">
             <div id="tape-content">
                 <h2 id="side-title">Side A: The Vibe</h2>
-                <p id="side-desc">VHS tapes of the 80s captured people's most private moments. These tapes record, rewind and play secrets in ways that words do not express.</p>
+                <p id="side-desc">Step into the Confession Room. An analog escape for a digital world. We serve quality drinks with a side of nostalgia. Rewind, relax, and enjoy the static.</p>
             </div>
             <button class="btn-flip" onclick="triggerClick(); flipTape();"><span>↻</span> FLIP TAPE</button>
         </div>
@@ -463,8 +463,8 @@
             <div class="log-entry"><strong>#8921</strong> MY WIFE DOESN'T KNOW I AM HERE WITH MY GIRLFRIEND</div>
             <div class="log-entry"><strong>#7734</strong> ADONIS LOOKS LIKE HE LOST WEIGHT</div>
             <div class="log-entry"><strong>#1029</strong> BLONDE HAIR GUY AT THE BAR IS CUTE WHAT'S HIS NAME?</div>
-            <div class="log-entry system">SYSTEM: CONNECTION ESTABLISHED...</div>
             <div class="log-entry system">WARNING: ALL MESSAGES ARE PUBLIC.</div>
+            <div class="log-entry system">SYSTEM: CONNECTION ESTABLISHED...</div>
         </div>
 
         <div class="wire-input-area">
@@ -511,7 +511,8 @@
         { name: "PAUSE FOR REFLECTION", ing: "Gin, Cucumber, Elderflower, Tonic", vibe: "Clean and crisp — the calm moment between secrets shared.", price: "$22", color: "#a0e6ff", shape: "inset(10% 40% 10% 40%)" },
         { name: "STATIC SECRETS", ing: "Mezcal, Blackberry Liqueur, Lime, Activated Charcoal", vibe: "Smoky, mysterious, dark as a fuzzy VHS screen.", price: "$26", color: "#1a1a1a", shape: "polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)" },
         { name: "TAPE OVER TRUTH", ing: "Bourbon, Amaro, Cherry Syrup, Orange Peel", vibe: "A rich, bittersweet sip that feels like rewriting over old confessions.", price: "$24", color: "#bf5700", shape: "inset(20% 10% 20% 10%)" },
-        { name: "GUILTY PLEASURES", ing: "Vodka, Passionfruit, Vanilla, Prosecco", vibe: "A cheeky crowd-pleaser — the uncut, unapologetic version of indulgence.", price: "$24", color: "#f4e724", shape: "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)" }
+        { name: "GUILTY PLEASURES", ing: "Vodka, Passionfruit, Vanilla, Prosecco", vibe: "A cheeky crowd-pleaser — the uncut, unapologetic version of indulgence.", price: "$24", color: "#f4e724", shape: "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)" },
+        { name: "LAST RECORDING", ing: "Absinthe, Gin, Mint, Lemon, Soda", vibe: "Sharp, haunting, and unforgettable — like the final track on a worn-out VHS tape.", price: "$25", color: "#55ddaa", shape: "polygon(20% 0%, 80% 0%, 50% 100%)" }
     ];
 
     let currentIndex = 0;
@@ -637,11 +638,11 @@
             isSideA = !isSideA;
             if (isSideA) {
                 sideTitle.innerText = "Side A: The Vibe";
-                sideDesc.innerText = "VHS tapes of the 80s captured people's most private moments. These tapes record, rewind and play secrets in ways that words do not express.
+                sideDesc.innerText = "Step into the Confession Room. An analog escape for a digital world. We serve quality drinks with a side of nostalgia. Rewind, relax, and enjoy the static.";
                 tapeLabel.innerText = "SIDE A"; tapeLabel.style.color = "#121212";
             } else {
                 sideTitle.innerText = "Side B: The Protocol";
-                sideDesc.innerText = "1. What happens here, stays here.\n2. No flash photography.\n3. Respect the confession.\n4. Leave your burdens at the door.\n\n[HIDDEN TRACK]: Ask for the 'Last Recording' cocktail.";
+                sideDesc.innerText = "1. What happens here, stays here.\n2. No flash photography.\n3. Respect the confession.\n4. Leave your burdens at the door.\n\n[HIDDEN TRACK]: Ask for the 'Last Recording' off-menu.";
                 tapeLabel.innerText = "SIDE B"; tapeLabel.style.color = "#cfdb31";
             }
         }, 400);
